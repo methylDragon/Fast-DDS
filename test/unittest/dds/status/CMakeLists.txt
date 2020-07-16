@@ -90,7 +90,7 @@ if(NOT ((MSVC OR MSVC_IDE) AND EPROSIMA_INSTALLER))
                 )
         endif()
         
-        include_directories(${TINYXML2_INCLUDE_DIR})
+        include_directories(${TINYXML2_INCLUDE_DIR} ${ASIO_INCLUDE_DIR})
 
         if(WIN32)
             add_definitions(-D_WIN32_WINNT=0x0601)
