@@ -86,6 +86,7 @@ def cmd(install_path, setup_script_path=Path(), args=''):
     else:
         print(f'{os.name} not supported')
         sys.exit(1)
+    print('----------------{}-------------'.format(cmd))
     return cmd
 
 
